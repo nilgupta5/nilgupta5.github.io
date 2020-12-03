@@ -13,7 +13,7 @@
 				padding-left: 15px;
 			}    
 		</style>
-		<script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=es6"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.4/bluebird.min.js"></script>
 	</head>
 	
 	<script>
@@ -81,8 +81,8 @@
 			tokenCallBack: getTokenCallBack 
 		});
 		function getTokenCallBack(){
-			let idToken; 
-			let params = window.location.hash.substring(1).split("&"); 
+			var idToken; 
+			var params = window.location.hash.substring(1).split("&"); 
 			idToken = params[0].split("=")[1];			
 			return Promise.resolve(idToken); 
 		}
