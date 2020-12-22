@@ -81,7 +81,7 @@
 		<script src="https://empngupta1.service-now.com/scripts/sn_csm_ec.js"></script>
 		<script>
 		SN_CSM_EC.init({
-			moduleID: "https://empngupta1.service-now.com/#ddb3290bdb852850cfd741b91396192c"
+			moduleID: "https://empngupta1.service-now.com/#b0b3b66c1b51e8506783dd3abc4bcb45"
 		});
 		function getTokenCallBack(){
 			let idToken;
@@ -95,8 +95,7 @@
 		var params = window.location.hash.substring(1).split("&");
 		var idToken = "";
 		var userID;
-		if(params[0].indexOf('id_token') != "-1" && window.localStorage.getItem("loggin") != "true"){
-			window.localStorage.setItem("loggin","true");
+		if(params[0].indexOf('id_token') != "-1"){
 		SN_CSM_EC.onLogin();
 		}
 		</script> 		
