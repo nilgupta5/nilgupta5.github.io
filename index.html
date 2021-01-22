@@ -81,7 +81,8 @@
 		<script src="https://empngupta1.service-now.com/scripts/sn_csm_ec.js"></script>
 		<script>
 		SN_CSM_EC.init({
-			moduleID: "https://empngupta1.service-now.com/#c748fe601b91e8506783dd3abc4bcb9d"
+			moduleID: "https://empngupta1.service-now.com/#c748fe601b91e8506783dd3abc4bcb9d",
+			tokenCallBack: getTokenCallBack
 		});
 		function getTokenCallBack(){
 			let idToken;
